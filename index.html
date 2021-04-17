@@ -31,33 +31,24 @@
 
     <!-- navigation -->
     <header>
-        <nav class="navbar  navbar-expand-lg fixed-top">
+        <nav class="navbar  navbar-expand-lg">
             <a href="#" class="navbar-brand">Music <span> Library</span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" ><i class="fas fa-bars"></i></button>
-            
-
-           <div class="collapse navbar-collapse  " id="navbar">
-            <ul class="navbar-nav d-lg-none ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#explore-section">Explore</a></li>
-                <li class="nav-item"><a class="nav-link" href="#create-section">Creative</a></li>
-                <li class="nav-item"><a class="nav-link" href="#share-section">Share</a></li>
-            </ul>
-           </div>
-
-            <form action="#" class="form-group ml-auto d-none d-lg-block">
-                <div class="input-group">
-                    <input type="text" placeholder="Search Your Music" class="form-control">
-                    <div class="input-group-append">
-                        <div class="input-group-text"> Search </div>
-                    </div>
-                </div>
-            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><i
+                    class="fas fa-bars"></i></button>
+                    
+            <div class="collapse navbar-collapse  " id="navbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home-section">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#explore-section">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#create-section">Creative</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#share-section">Share</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- Carousel Slider -->
-    <section id="showcase" >
+    <section id="showcase">
         <div id="slider" class="carousel slide" data-ride="carousel">
             <ul class="carousel-indicators">
                 <li data-slide-to="0" data-target="#slider" class="active"></li>
@@ -70,7 +61,7 @@
                         <div class="carousel-caption mb-5 pb-5">
                             <h2 class="display-4">Music Studio</h2>
                             <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button class="btn btn-danger">Show More</button>
+                            <button class="btn btn-danger">Show More</button>
                         </div>
                     </div>
                 </div>
@@ -79,7 +70,7 @@
                         <div class="carousel-caption mb-5 pb-5 ">
                             <h2 class="display-4">Concert One</h2>
                             <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button class="btn btn-danger">Show More</button>
+                            <button class="btn btn-danger">Show More</button>
                         </div>
                     </div>
                 </div>
@@ -88,116 +79,77 @@
                         <div class="carousel-caption  text-light mb-5 pb-5">
                             <h2 class="display-4">Concert <span class="text-danger">Two</span></h2>
                             <p class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button class="btn btn-danger">Show More</button>
+                            <button class="btn btn-danger">Show More</button>
                         </div>
                     </div>
                 </div>
             </div>
-           <a href="#slider" class="carousel-control-prev" data-slide="prev">
-               <span class="carousel-control-prev-icon"></span>
-           </a>
-           <a href="#slider" class="carousel-control-next" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+            <a href="#slider" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
     </section>
 
     <section id="home" class="text-center">
-        <div class="overlay">
-            <nav class="d-none d-xl-block side-menu">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="img/logo.png" alt="">
+            </div>
 
-                <ul class="navbar-nav music-icon">
-                    <li class="nav-item"><a href="#" class="nav-link">Music world <img src="img/icons8-music-24.png"
-                                class="ml-3" alt=""></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Music shop <i
-                                class="fas fa-music ml-2 text-danger"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Dramatist <i
-                                class="fas fa-drum text-warning"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Guitarist <i
-                                class="fas fa-guitar text-secondary"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> _spotify <i
-                                class="fab fa-spotify ml-3 text-success"></i> </a></li>
-                </ul>
-            </nav>
-            <div class="container pt-5">
-                <div class="row text-center">
-                    <div class="col">
-                        <h1 class="display-4 text-center mb-0">
-                            Fresh Your <span>Mind</span>
-                        </h1>
-                        <h5 class="text-center">With Your Favourite <span>Song</span> .</h5>
-                    </div>
+        </nav>
+        <div class="img">
+            <img src="img/listening-song.jpg" alt="">
+        </div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col">
+                    <h1 class="display-4 text-center mb-0">
+                        Fresh Your <span>Mind</span>
+                    </h1>
+                    <h5 class="text-center">With Your Favourite <span>Song</span> .</h5>
                 </div>
-
-                <div class="row mt-4 ">
-                    <div class="col-xl-6 left-side">
-
-                        <div class="listen text-center">
-
-                            <iframe src="https://www.youtube-nocookie.com/embed/NliYy7iqh-U?start=1"
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                            </iframe>
-                            <abbr title="Next song"><i class="fas fa-forward text-right"> </i> </abbr>
-                            <h4 class="text-left ">
-                                Here You can Find Your <span>Favourite </span> <a href="#">Songs</a> .
-                            </h4>
-                            
-                        </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="display-3">The <br> Real <br> Sound</h1>
+                </div>
+                <div class="col-sm-6">
+                    <div class="right">
+                        <img src="img/pexels-sound-on-3756939.jpg" alt="">
+                        
                     </div>
-                    <div class="col-xl-6 d-none d-md-block ">
-                        <div class="sing-up p-3 ml-lg-5 d-none d-xl-block ">
-                            <div class="form-header ">
-                                <h2 class="text-center">Subscription </h2>
-                            </div>
-                            <br>
-                            <form action="#" class="form-group">
-                                <label class="sr-only" for="name">Name</label>
-                                <input type="text" placeholder="Name" class="form-control" id="name" required>
-                                <br>
-                                <label class="sr-only" for="email">Email</label>
-                                <input type="email" placeholder="Email" class="form-control" id="email" required>
-                                <br>
-                                <label class="sr-only" for="pass">password</label>
-                                <input type="password" placeholder="password" class="form-control" id="pass" required>
-
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="text-left mt-3  custom-checkbox">
-                                            <input type="checkbox" name="checkbox" id="check">
-                                            <label for="check"> Remember me</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-3 forget">
-                                        <a href="#">Forget Password?</a>
-                                    </div>
-                                </div>
-                                <button class=" btn btn-info btn-block" type="submit">Log In</button>
-                                <div>or</div>
-                                <div class="seconod-way">
-                                    <button class="btn mt-1"> <i class="fab fa-facebook"></i> Log in with facebook
-                                        account </button>
-                                </div>
-
-                            </form>
-                            <div class="footer-form">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="#">Create an account</a>
-                                    </div>
-                                    <div class="col-6">
-                                        <a class="text-danger" href="#">Register</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="music">
+                        <p class="d-inline">Click Here to play</p><img id="icon" src="img/play.png" alt="">
                     </div>
+                    <audio id="song">
+                        <source src="song/Galliyan-Unplugged.mp3" type="audio/mp3">
+                    </audio>
                 </div>
             </div>
         </div>
     </section>
 
+
+
+    <script>
+        var song = document.getElementById("song")
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src = "img/pause.png"
+            }else{
+                song.pause();
+                icon.src = "img/play.png"
+            }
+        }
+    </script>
 </body>
 
 </html>

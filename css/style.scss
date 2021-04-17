@@ -1,192 +1,188 @@
 @import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 // font-family: 'Open Sans Condensed', sans-serif;
 // font-family: 'Dosis', sans-serif;
 
-// media
-@media screen and (max-width:768px){
-    iframe{
-        width: 480px !important;
-        height: 300px !important;
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+        animation-timing-function: ease-in;
     }
-    #home{
-        height: 550px !important;
+    15% {
+        transform: scale(0.9);
+        animation-timing-function: ease-out;
     }
-    .overlay{
-        height: 550px !important;
+    30% {
+        transform: scale(0.95);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: scale(0.87);
+    }
+    70% {
+        transform: scale(1);
     }
 }
-@media screen and (max-width:568px){
-    #home{
-        height: 450px !important;
-    }
-    .overlay{
-        height: 450px !important;
-    }
-    iframe{
-        width: 380px !important;
-        height: 200px !important;
-    }
-    
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    font-family: "New Tegomin", serif;
 }
-.display-1, .display-2, .display-3, .display-4, .display-5{
-    font-family: 'Dosis', sans-serif;
-
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5 {
+    font-family: "Dosis", sans-serif;
 }
-h1,  h2, h3, h4, h5, h6{
-    font-family: 'Dosis', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Dosis", sans-serif;
 }
-span{
+span {
     color: red;
+}
+
+nav {
+    .navbar-brand {
+        text-decoration: none !important;
+        font-size: 2.1rem !important;
+        letter-spacing: 5px;
+        word-spacing: 3px;
     }
+    .nav-item{
+        margin-right: 1.8rem;
+    
     a {
         color: #fff;
-        text-decoration: underline;
+        font-family: 'Dosis', sans-serif;
+        font-size: 14px;
+        position: relative;
+        padding: 0 !important;
+        margin: 0;
     }
     a:hover{
         color: #fff;
     }
-
-
-    .follow-button{
-        border: none;
-        padding: 10px 15px;
-        border-radius: 25px;
-        cursor: pointer;
+}
+    .nav-item a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background-color:#fff;
+        transition: 250ms ease-in-out;
+        transform: scaleX(0);
+        transform-origin: left;
     }
-
-
-
-nav{
-    
-    border-bottom: 1px solid #000;
-    form{
-        padding-top: 18px;
+    .nav-item a:hover::after {
+        transform: scaleX(1);
+        transform-origin: right;
     }
-
-        .navbar-brand{
-             text-decoration: none !important;
-             font-size: 2.1rem !important;
-        }
-    .form-control{
-        width: 450px !important;
-    }
-    .input-group-text{
-        cursor: pointer;
-        font-weight: 500;
-    }
-   
 }
 .carousel-item {
-    height: 640px; 
+    height: 640px;
 }
-  
-  .carousel-img-1 {
+
+.carousel-img-1 {
     background: url("../img/pexels-stas-knop-1626481.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
-  
-  .carousel-img-2 {
+
+.carousel-img-2 {
     background: url("../img/img-1.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
-  
-  .carousel-img-3 {
+
+.carousel-img-3 {
     background: url("../img/img-2.jpg");
-    background-size: cover; 
+    background-size: cover;
 }
-  
-.side-menu {
-    position: absolute;
-    top: 33%;
-    left: 0;
-    ul {
-        li:hover {
-            margin-left: 0px;
-        }
-    }
-    ul li {
-        background: rgb(162, 160, 160);
-        padding: 8px 0;
-        margin-bottom: 12px;
-        color: #fff;
-        width: 165px;
-        margin-left: -117px;
-        transition: 0.5s;
-        border-radius: 0px 10px 10px 0;
-        a {
-            text-decoration: none;
-            color: rgb(14, 14, 14);
-            text-transform: uppercase;
-            font-weight: bolder;
-            transition: ease-in 0.3s;
-            padding: 0 10px;
-            font-size: 17px;
-        }
-        a:hover {
-            color: rgb(0, 0, 0);
-            text-transform: uppercase;
-            font-weight: bolder;
-        }
-    }
-    .music-icon{
-        i{
-            margin-left: 10px;
-            font-size: 22px;
-        }
-    }
-}
+
 #home {
-    background: url(../img/pexels-stas-knop-1626481.jpg);
+    background: url(../img/image.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 660px;
+    height: 100vh;
     position: relative;
-}
-.overlay {
-    background: rgb(24, 24, 24);
-    opacity: 0.9;
-    height: 660px;
-}
-iframe{
-    width: 555px;
-    height: 410px;
-    border: none;
-    border-radius: 3px;
-}
-.sing-up {
-   
-    box-shadow: 5px 5px 12px #725151;
-    border-radius: 8px;
-    .form-header {
-        border-bottom: 1px solid #fff;
-    }
-    h2 {
-        color: red;
-        font-family: "Open Sans Condensed", sans-serif;
-        font-weight: bolder;
-        i {
-            color: red;
-            font-size: 30px;
-            line-height: 1.5;
+    .navbar-brand {
+        img {
+            width: 100px;
         }
     }
-    
-    .seconod-way {
-        button {
-            background: #12378c !important;
+    .img {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        img {
+            width: 200px;
+            clip-path: circle();
+            animation: bounce 2s ease-in-out infinite;
         }
-        button:hover {
-            background: #3b5998 !important ;
+    }
+    .img::after {
+        content: "";
+        position: absolute;
+        left: 8px;
+        bottom: -30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgb(233, 178, 178);
+        animation: bounce 2s ease-in-out infinite;
+    }
+    .img::before {
+        content: "";
+        position: absolute;
+        left: -18px;
+        bottom: -65px;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgb(151, 143, 206);
+        animation: bounce 2s ease-in-out infinite;
+    }
+    .yellow {
+        position: absolute;
+        top: 215px;
+        right: 220px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(226, 230, 23);
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    .container-fluid {
+        .right {
+            img {
+                width: 300px;
+                clip-path: circle();
+                margin-top: -65px;
+                margin-left: 60px;
+            }
+        }
+    }
+    h1 {
+        font-weight: 800;
+        text-align: start;
+        margin-left: 5rem;
+    }
+    .music {
+        margin: -50px 0 0 5rem;
+        p {
+            color: #000;
+        }
+        img {
+            width: 55px;
         }
     }
 }
